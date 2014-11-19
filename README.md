@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/lucoodevcourse/uidemo-android-scala.svg?branch=master)](https://travis-ci.org/lucoodevcourse/uidemo-android-scala)
 # Overview
 
 This is a standalone Scala-based version of the Dots/DotView/TouchMe MVC Android UI Demo from
