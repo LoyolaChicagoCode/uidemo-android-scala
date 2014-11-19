@@ -1,4 +1,4 @@
-package edu.luc.etl.cs313.scala.hello.uidemo
+package edu.luc.etl.cs313.scala.uidemo
 package view
 
 import android.content.Context
