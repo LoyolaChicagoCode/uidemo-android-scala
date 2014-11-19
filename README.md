@@ -11,9 +11,10 @@ Please refer to the book chapter for detailed information on this example.
 # Learning Objectives
 
 * Mapping the model-view-controller (MVC) architecture to Android
-* Defining custom view components in Android
 * Understanding the difference between model-view-controller and model-view-adapter (MVA)
 * Android application life cycle management
+* Defining custom view components in Android
+* Handling key presses and touch events 
 * Background activities using [AsyncTask](http://developer.android.com/reference/android/os/AsyncTask.html) 
 
 # Building and Running
