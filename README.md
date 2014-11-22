@@ -1,4 +1,7 @@
-[![Build Status](https://travis-ci.org/lucoodevcourse/uidemo-android-scala.svg?branch=master)](https://travis-ci.org/lucoodevcourse/uidemo-android-scala)
+[![Build Status](https://travis-ci.org/lucoodevcourse/uidemo-android-scala.svg?branch=master)](https://travis-ci.org/lucoodevcourse/uidemo-android-scala) 
+[![Coverage Status](https://img.shields.io/coveralls/lucoodevcourse/uidemo-android-scala.svg)](https://coveralls.io/r/lucoodevcourse/uidemo-android-scala) 
+[![Download](https://api.bintray.com/packages/lucoodevcourse/generic/uidemo-android-scala/images/download.svg) ](https://bintray.com/lucoodevcourse/generic/uidemo-android-scala/_latestVersion)
+
 # Overview
 
 This is a standalone Scala-based version of the Dots/DotView/TouchMe MVC Android UI Demo from
