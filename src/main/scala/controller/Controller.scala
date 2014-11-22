@@ -4,6 +4,7 @@ package controller
 import android.graphics.Color
 import android.view.View.OnKeyListener
 import android.view.{KeyEvent, View}
+import android.widget.TextView
 
 import view.DotView
 import model.Dots
@@ -13,10 +14,9 @@ import scala.util.Random
 /** Controller mixin for Android UI demo program */
 trait Controller extends TypedActivityHolder {
 
-  def dotView: DotView
   val dotModel: Dots
 
-  def connectController(): Unit = {
+  def connectDotsController(dotView: DotView): Unit = {
     dotView.setOnTouchListener(new TrackingTouchListener(dotModel))
 
     dotView.setOnKeyListener(new OnKeyListener {
@@ -49,19 +49,23 @@ trait Controller extends TypedActivityHolder {
         dotView.invalidate()
       }
     })
+
+    /**
+     * @param dots the dots we're drawing
+     * @param color the color of the dot
+     */
+    def makeDot(dots: Dots, color: Int): Unit = {
+      import DotView.DOT_DIAMETER
+      val pad = (DOT_DIAMETER + 2) * 2
+      dots.addDot(
+        DOT_DIAMETER + (Random.nextFloat() * (dotView.getWidth - pad)),
+        DOT_DIAMETER + (Random.nextFloat() * (dotView.getHeight - pad)),
+        color,
+        DOT_DIAMETER)
+    }
   }
 
-  /**
-   * @param dots the dots we're drawing
-   * @param color the color of the dot
-   */
-  def makeDot(dots: Dots, color: Int): Unit = {
-    import DotView.DOT_DIAMETER
-    val pad = (DOT_DIAMETER + 2) * 2
-    dots.addDot(
-      DOT_DIAMETER + (Random.nextFloat() * (dotView.getWidth - pad)),
-      DOT_DIAMETER + (Random.nextFloat() * (dotView.getHeight - pad)),
-      color,
-      DOT_DIAMETER)
+  def connectListController(listView: TextView): Unit = {
+    listView.append("asdf")
   }
 }

@@ -12,7 +12,7 @@ instrumentSettings
 
 name := "uidemo-android-scala"
 
-version := "0.1"
+version := "0.2"
 
 scalacOptions in Compile ++= Seq("-feature", "-unchecked", "-deprecation")
 

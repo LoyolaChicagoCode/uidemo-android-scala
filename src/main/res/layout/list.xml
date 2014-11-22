@@ -8,13 +8,13 @@
     android:layout_height="wrap_content"
     android:baselineAligned="false">
 
-  <edu.luc.etl.cs313.scala.uidemo.view.DotView
-      android:id="@+id/dots"
-      android:focusableInTouchMode="true"
+
+  <TextView
+      android:id="@+id/list"
+      android:scrollbars="vertical"
+      android:maxLines="1000"
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:layout_weight="1"
-      android:background="@color/white"/>
+      android:layout_height="match_parent"/>
 
   <LinearLayout
       android:orientation="horizontal"
