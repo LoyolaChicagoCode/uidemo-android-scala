@@ -5,60 +5,21 @@
     android:gravity="center_horizontal"
     android:background="@color/lt_grey"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="fill_parent"
     android:baselineAligned="false">
 
 
-  <TextView
-      android:id="@+id/list"
-      android:scrollbars="vertical"
-      android:maxLines="1000"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"/>
-
-  <LinearLayout
-      android:orientation="horizontal"
-      android:background="@color/grey"
+  <ScrollView
+      android:id="@+id/scroll"
+      android:fillViewport="true"
       android:layout_width="match_parent"
       android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/text1"
-        android:text="@string/defaultText"
-        android:focusable="false"
-        android:layout_height="wrap_content"
-        android:layout_width="0dp"
-        android:layout_weight="1"/>
+      <TextView
+          android:id="@+id/list"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
 
-    <EditText
-        android:id="@+id/text2"
-        android:text="@string/defaultText"
-        android:focusable="false"
-        android:layout_height="wrap_content"
-        android:layout_width="0dp"
-        android:layout_weight="1"/>
-  </LinearLayout>
+  </ScrollView>
 
-  <LinearLayout
-      android:orientation="horizontal"
-      android:background="@color/dk_grey"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content">
-
-    <Button
-        android:id="@+id/button1"
-        android:text="@string/labelRed"
-        android:textColor="@color/red"
-        android:layout_height="wrap_content"
-        android:layout_width="0dp"
-        android:layout_weight="1"/>
-
-    <Button
-        android:id="@+id/button2"
-        android:text="@string/labelGreen"
-        android:textColor="@color/green"
-        android:layout_height="wrap_content"
-        android:layout_width="0dp"
-        android:layout_weight="1"/>
-  </LinearLayout>
 </LinearLayout>

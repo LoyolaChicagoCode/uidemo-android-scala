@@ -26,7 +26,7 @@ class MainActivity extends Activity with TypedActivity with Controller {
   override def onCreate(state: Bundle) = {
     super.onCreate(state)
     setContentView(R.layout.main)
-    connectDotsController(findView(TR.dots))
+    connectDotsView()
   }
 
   override def onStart() = {
@@ -41,15 +41,19 @@ class MainActivity extends Activity with TypedActivity with Controller {
     super.onStop()
   }
 
+  // TODO consider using State pattern
+
   var isDotsView = true
 
   def toggleView(): Unit = {
     if (isDotsView) {
+      isDotsView = false
       setContentView(R.layout.list)
-      connectListController(findView(TR.list))
+      connectListView()
     } else {
+      isDotsView = true
       setContentView(R.layout.main)
-      connectDotsController(findView(TR.dots))
+      connectDotsView()
     }
   }
 
