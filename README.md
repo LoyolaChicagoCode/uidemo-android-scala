@@ -15,6 +15,7 @@ Please refer to the book chapter for detailed information on this example.
 
 * Mapping the model-view-controller (MVC) architecture to Android
 * Understanding the [difference between model-view-controller and model-view-adapter (MVA)](https://www.palantir.com/2009/04/model-view-adapter/)
+* Support for multiple view-controller pairs
 * Android application life cycle management
 * Defining custom view components in Android
 * Handling key presses and touch events 
