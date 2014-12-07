@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/lucoodevcourse/uidemo-android-scala.svg?branch=master)](https://travis-ci.org/lucoodevcourse/uidemo-android-scala) 
-[![Coverage Status](https://img.shields.io/coveralls/lucoodevcourse/uidemo-android-scala.svg)](https://coveralls.io/r/lucoodevcourse/uidemo-android-scala) 
-[![Download](https://api.bintray.com/packages/lucoodevcourse/generic/uidemo-android-scala/images/download.svg) ](https://bintray.com/lucoodevcourse/generic/uidemo-android-scala/_latestVersion)
+[![Build Status](https://travis-ci.org/LoyolaChicagoCode/uidemo-android-scala.svg?branch=master)](https://travis-ci.org/LoyolaChicagoCode/uidemo-android-scala) 
+[![Coverage Status](https://img.shields.io/coveralls/LoyolaChicagoCode/uidemo-android-scala.svg)](https://coveralls.io/r/LoyolaChicagoCode/uidemo-android-scala) 
+[![Download](https://api.bintray.com/packages/loyolachicagocode/generic/uidemo-android-scala/images/download.svg) ](https://bintray.com/loyolachicagocode/generic/uidemo-android-scala/_latestVersion)
 
 # Overview
 
