@@ -12,6 +12,8 @@ name := "uidemo-android-scala"
 
 version := "0.2"
 
+javacOptions ++= Seq("-target", "1.6", "-source", "1.6") // so we can build with Java 7 or 8
+
 scalacOptions in Compile ++= Seq("-feature", "-unchecked", "-deprecation")
 
 platformTarget in Android := "android-19"
