@@ -28,14 +28,16 @@ class TrackingTouchListener(dots: Dots) extends View.OnTouchListener {
       case MotionEvent.ACTION_MOVE =>
         for (i <- tracks) {
           val idx = evt.findPointerIndex(i)
-          for (j <- 0 until evt.getHistorySize) {
-            addDot(
-              dots,
-              evt.getHistoricalX(idx, j),
-              evt.getHistoricalY(idx, j),
-              evt.getHistoricalPressure(idx, j),
-              evt.getHistoricalSize(idx, j)
-            )
+          if(idx >= 0) {
+            for (j <- 0 until evt.getHistorySize) {
+              addDot(
+                dots,
+                evt.getHistoricalX(idx, j),
+                evt.getHistoricalY(idx, j),
+                evt.getHistoricalPressure(idx, j),
+                evt.getHistoricalSize(idx, j)
+              )
+            }
           }
         }
       case _ => return false
@@ -43,12 +45,14 @@ class TrackingTouchListener(dots: Dots) extends View.OnTouchListener {
 
     for (i <- tracks) {
       val idx = evt.findPointerIndex(i)
-      addDot(dots,
-        evt.getX(idx),
-        evt.getY(idx),
-        evt.getPressure(idx),
-        evt.getSize(idx)
-      )
+      if( idx >= 0) {
+        addDot(dots,
+          evt.getX(idx),
+          evt.getY(idx),
+          evt.getPressure(idx),
+          evt.getSize(idx)
+        )
+      }
     }
 
     true
